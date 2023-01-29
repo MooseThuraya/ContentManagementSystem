@@ -1,0 +1,166 @@
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\MustafaCMS.dll.config
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\MustafaCMS.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\MustafaCMS.pdb
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\csc.exe
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\csc.exe.config
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\csc.rsp
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\csi.exe
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\csi.exe.config
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\csi.rsp
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.AppContext.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Console.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.Compression.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Net.Http.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.ValueTuple.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\vbc.exe
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\vbc.exe.config
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\vbc.rsp
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Antlr3.Runtime.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Newtonsoft.Json.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Helpers.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Mvc.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Optimization.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Razor.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\WebGrease.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Helpers.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Mvc.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Optimization.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.Razor.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Newtonsoft.Json.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Antlr3.Runtime.pdb
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.csprojAssemblyReference.cache
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.csproj.CoreCompileInputs.cache
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.csproj.CopyComplete
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.pdb
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\EntityFramework.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\EntityFramework.SqlServer.dll
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\EntityFramework.xml
+C:\Users\mosta\source\repos\MustafaCMS\MustafaCMS\bin\EntityFramework.SqlServer.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\MustafaCMS.dll.config
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\MustafaCMS.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\MustafaCMS.pdb
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\csc.exe
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\csc.exe.config
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\csc.rsp
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\csi.exe
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\csi.exe.config
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\csi.rsp
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.AppContext.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Console.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.Compression.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Net.Http.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Net.Sockets.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.ValueTuple.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\vbc.exe
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\vbc.exe.config
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\vbc.rsp
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Antlr3.Runtime.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\EntityFramework.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\EntityFramework.SqlServer.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Newtonsoft.Json.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Helpers.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Mvc.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Optimization.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Razor.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\WebGrease.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\EntityFramework.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\EntityFramework.SqlServer.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Helpers.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Mvc.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Optimization.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.Razor.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Newtonsoft.Json.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Antlr3.Runtime.pdb
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.csproj.AssemblyReference.cache
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.csproj.CoreCompileInputs.cache
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.csproj.CopyComplete
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.dll
+C:\Users\mosta\OneDrive\Desktop\MustafaCMS 15-03-21\MustafaCMS\MustafaCMS\obj\Debug\MustafaCMS.pdb

@@ -1,0 +1,162 @@
+﻿@model MustafaCMS.Models.User
+
+@{
+    ViewBag.Title = "LoginPage";
+    //Layout = "~/Views/Shared/_mooseUI.cshtml";
+    Layout = null;
+
+
+}
+<!-- Sweet Alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+@if (Session["SignUp"] != null)
+{
+    //just signed up
+    <p style="height: 0;"></p>
+    <!-- The above is just a snippet to make the lower code to actually work-->
+    <script>
+        Alert();
+        function Alert() {
+            swal("Success", "You have successfully signed up!", "success")
+        };
+    </script>
+}
+
+@{
+    if (Session["userId"] != null)
+    {
+        Session["userId"] = null;
+        Session["Username"] = null;
+        Session["SignUp"] = null;
+        Session["firstName"] = null;
+        Session["lastName"] = null;
+        Session["email"] = null;
+        Session.Abandon();
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MooseUI: Login Page</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+          content="MooseUI Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords"
+          content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, MooseUI, MooseUI bootstrap admin template, free admin theme, free dashboard template" />
+    <meta name="author" content="CodedThemes" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="@Url.Content("~/Content/assets/")images/favicon.ico" type="image/x-icon" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/")fonts/fontawesome-all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+    <!-- animation css -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/")plugins/animation/css/animate.min.css" />
+    <!-- vendor css -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/")css/formStyle.css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/")css/styleOther.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- This is the error color -->
+    <style>
+
+        .field-validation-error {
+            color: #ff005c;
+        }
+
+        .input-group.mb-3 {
+            margin-bottom: 10px !important;
+        }
+
+        .input-group.mb-4 {
+            margin-bottom: 10px !important;
+        }
+
+        p {
+            margin-top: 7px !important;
+            margin-bottom: 10px !important;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fa fa-unlock auth-icon"></i>
+                    </div>
+                    <h3 class="mb-4">Login</h3>
+                    @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+                    {
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", placeholder = "Username" } })
+                        </div>
+                        string errorMsg = Html.ValidationMessageFor(model => model.Username).ToString();
+
+                        if (errorMsg.Equals("* This field is required"))
+                        {
+                            <p class="field-validation-error">@errorMsg</p>
+                        }
+                        <div class="input-group mb-4">
+                            @Html.EditorFor(Model => Model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password" } })
+                        </div>
+                        if (Html.ValidationMessageFor(model => model.Password).ToString() == "* This field is required")
+                        {
+                            <p class="field-validation-error">@Html.ValidationMessageFor(model => model.Password)</p>
+                        }
+                        <p style="margin-top: 10px" class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</p>
+                        <div style="margin-top:30px" class="form-group text-left">
+                            <div class="checkbox checkbox-fill d-inline">
+                                <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
+                                <label style="display: inline;" for="checkbox-fill-a1" class="cr"> Save Details</label>
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary shadow-2 mb-4">Login</button>
+                        <p class="mb-2 text-muted">
+                            Forgot password? <a href="@Url.Action("ForgotPassword", "Home")">Reset</a>
+                        </p>
+                        <p class="mb-0 text-muted">
+                            Don’t have an account? <a href="@Url.Action("AddOrEdit", "User")">Signup</a>
+                        </p>
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Required Js -->
+    <script src="@Url.Content("~/Content/assets/")js/vendor-all.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+    <!-- JS FILES -->
+    <script src="@Url.Content("~/Content/assets/")js/jQueryValidation.js"></script>
+
+</body>
+
+</html>

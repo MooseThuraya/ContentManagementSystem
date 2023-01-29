@@ -1,0 +1,250 @@
+﻿
+@{
+    ViewBag.Title = "ChartKnob";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 p-r-0 title-margin-right">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Hello, <span>@Session["firstName"].ToString()</span></h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+            <div class="col-lg-4 p-l-0 title-margin-left">
+                <div class="page-header">
+                    <div class="page-title">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Chart-Knob</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+        </div>
+        <!-- /# row -->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Basic</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="200" data-min="-100" data-displayPrevious=true value="44">
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Disable display input</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="200" data-displayInput=false value="35">
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Cursor mode</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="200" data-cursor=true data-bgColor="#EEEEEE" data-fgColor="#FB6E52"
+                                   data-thickness=.3 value="29">
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Angle offset</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-angleOffset=90 data-linecap=round value="35">
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Angle offset and arc</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-angleOffset=-125 data-angleArc=250 data-fgColor="#66EE66"
+                                   data-rotation="anticlockwise" value="35">
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>4-digit, step 0.1</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-min="-10000" data-displayPrevious=true data-max="10000" data-step=".1"
+                                   value="0">
+                        </div>
+                        <!-- /# column -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Overloaded 'draw' method</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="200" data-displayPrevious=true data-bgColor="#EEEEEE"
+                                   data-fgColor="#FB6E52" data-skin="tron" data-cursor=true value="75" data-thickness=".2">
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Overloaded 'draw' method</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="200" data-displayPrevious=true data-bgColor="#2FB594"
+                                   data-fgColor="#2FB594" data-skin="tron" data-thickness=".2" value="75">
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Overloaded 'draw' method</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="200" data-angleOffset="180" data-bgColor="#237596"
+                                   data-fgColor="#237596" data-skin="tron" data-thickness=".1" value="35">
+                        </div>
+                        <!-- /# column -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Responsive</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-width="75%" value="35">
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Read Only</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="knob" data-fgColor="chartreuse" data-thickness=".4" readonly value="22">
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Infinite || iPod click wheel</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body m-t-15 text-center text-center">
+                            <input class="infinite" value="0" data-width="200" data-thickness=".5" data-fgColor="#87CEEB"
+                                   data-bgColor="#EEEEEE" data-displayInput="false" data-cursor=true>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /# column -->
+    </div>
+    <!-- /# main content -->
+    </section>
+</div>
+  </div>
+

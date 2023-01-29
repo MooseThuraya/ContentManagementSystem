@@ -1,0 +1,269 @@
+﻿
+@{
+    ViewBag.Title = "ChartSparkLine";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 p-r-0 title-margin-right">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Hello, <span>@Session["firstName"].ToString()</span></h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+            <div class="col-lg-4 p-l-0 title-margin-left">
+                <div class="page-header">
+                    <div class="page-title">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Chart-Sparkline</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+        </div>
+        <!-- /# row -->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>TOTAL VISIT</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <span id="sparklinedash">0, 5, 6, 10, 9, 12, 4, 9</span>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-3">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>TOTAL PAGE VIEWS</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <span id="sparklinedash2">0, 5, 6, 10, 9, 12, 4, 9</span>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-3">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>UNIQUE VISITOR</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <span id="sparklinedash3">0, 5, 6, 10, 9, 12, 4, 9</span>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-3">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>BOUNCE RATE</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <span id="sparklinedash4"> 0, 5, 6, 10, 9, 12, 4, 9</span>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>SITE TRAFFIC</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline8"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>SITE TRAFFIC</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline9"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-4">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>SITE TRAFFIC</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline10"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Bar Chart</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline12" class="text-center"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Composite Bar Chart</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline13" class="text-center"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>PIE CHART</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline11" class="text-center"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart sperkline_fourteen_bg">
+                        <div class="card-title">
+                            <h4>LINE CHART</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline14" class="text-center"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>LINE CHART</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline16" class="text-center"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>BAR WITH DIFFERENT COLOR CHART</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sparkline-unix">
+                            <div id="sparkline15" class="text-center"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+
+        </section>
+
+    </div>
+</div>
+

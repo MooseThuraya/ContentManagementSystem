@@ -1,0 +1,593 @@
+﻿@{
+    if (Session["userId"] == null)
+    {
+        Response.Redirect("~/Login/LoginPage");
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+
+    @*Template Header Files*@
+
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+    <link rel="icon" href="@Url.Content("~/Content/assets/")images/favicon.ico" type="image/x-icon" />
+    
+
+   
+    <!-- Toastr -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <!-- Range Slider -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/rangSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/rangSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <!-- Bar Rating -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/barRating/barRating.css" rel="stylesheet">
+    <!-- Nestable -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/nestable/nestable.css" rel="stylesheet">
+    <!-- JsGrid -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/jsgrid/jsgrid-theme.min.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/assets/")css/lib/jsgrid/jsgrid.min.css" type="text/css" rel="stylesheet" />
+    <!-- Datatable -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/datatable/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/assets/")css/lib/data-table/buttons.bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Calender 2 -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+
+    <!-- Weather Icon -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/weather-icons.css" rel="stylesheet" />
+    <!-- Owl Carousel -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/assets/")css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- Select2 -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/select2/select2.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <!-- Calender -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/calendar/fullcalendar.css" rel="stylesheet" />
+
+
+    <!-- Styles -->
+    <link href="@Url.Content("~/Content/assets/")css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/themify-icons.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/assets/")css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/assets/")css/lib/weather-icons.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/assets/")css/lib/menubar/sidebar.css?version=51" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/lib/helper.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/style.css" rel="stylesheet">
+    <link href="@Url.Content("~/Content/assets/")css/styleOther.css" rel="stylesheet">
+
+
+    <!-- TINY MCE -->
+    <script src="https://cdn.tiny.cloud/1/ynulr8xw3ov2f8wvhv5kmdz91ci0i7ba5hpp28z3cfafwdu9/tinymce/5/tinymce.min.js"
+            referrerpolicy="origin"></script>
+
+
+</head>
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <div class="logo">
+                        <a href="@Url.Action("Index", "Home")">
+                            <!-- <img src="assets/images/logo.png" alt="" /> -->
+
+                            <span>MooseUI</span>
+                        </a>
+                    </div>
+                    <li class="label">Main</li>
+                    <li>
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-home"></i> Dashboard <span class="badge badge-primary">1</span> <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li><a href="@Url.Action("Index", "Home")">Dashboard 1</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="label">Apps</li>
+                    <!--   <li>
+
+    <a class="sidebar-sub-toggle">
+        <i class="ti-bar-chart-alt"></i> Charts <span class="sidebar-collapse-icon ti-angle-down"></span>
+    </a>
+    <ul>
+        <li>@Html.ActionLink("Flot", "ChartFlot", "Home")</li>
+        <li>@Html.ActionLink("Morris", "ChartMorris", "Home")</li>
+        <li>@Html.ActionLink("Chartjs", "Chartjs", "Home")</li>
+        <li>@Html.ActionLink("Peity", "ChartPeity", "Home")</li>
+        <li>@Html.ActionLink("Sparkle", "ChartSparkLine", "Home")</li>
+        <li>@Html.ActionLink("Knob", "ChartKnob", "Home")</li>
+    </ul>
+    </li>-->
+                    <li><a href="@Url.Action("AppEventCalendar", "Home")"><i class="ti-calendar"></i> Calendar </a></li>
+                    <li><a href="@Url.Action("AppEmail", "Home")"><i class="ti-email"></i> Email</a></li>
+                    <li><a href="@Url.Action("AppProfile", "Home")"><i class="ti-user"></i> Profile</a></li>
+                    <li><a href="@Url.Action("AppWidgetCard", "Home")"><i class="ti-layout-grid2-alt"></i> Widget</a></li>
+
+                   
+                    <li class="label">Features</li>
+                    <li>
+
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-layout"></i> UI Elements <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li><a href="@Url.Action("UiTypography", "Home")">Typography</a></li>
+                            <li><a href="@Url.Action("UiAlerts", "Home")">Alerts</a></li>
+
+                            <li><a href="@Url.Action("UiButton", "Home")">Button</a></li>
+                            <li><a href="@Url.Action("UiDropdown", "Home")">Dropdown</a></li>
+
+                            <li><a href="@Url.Action("UiListGroup", "Home")">List Group</a></li>
+
+                            <li><a href="@Url.Action("UiProgressbar", "Home")">Progressbar</a></li>
+                            <li><a href="@Url.Action("UiTab", "Home")">Tab</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-panel"></i> Components <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <!-- <li><a href="@Url.Action("UcCalendar", "Home")">Calendar</a></li>-->
+                            <li><a href="@Url.Action("UcCarousel", "Home")">Carousel</a></li>
+                            <!--<li><a href="UcWeather">Weather</a></li>-->
+                            <!--<li><a href="@Url.Action("UcDataMap", "Home")">Datamap</a></li>-->
+                            <li><a href="@Url.Action("UcTodoList", "Home")">To do</a></li>
+
+                            <li><a href="@Url.Action("UcSweetalert", "Home")">Sweet Alert</a></li>
+                            <li><a href="@Url.Action("UcToastr", "Home")">Toastr</a></li>
+                            <!--  <li><a href="@Url.Action("UcRangeSliderBasic", "Home")">Basic Range Slider</a></li> -->
+                            <!--<li><a href="@Url.Action("UcRangeSliderAdvanced", "Home")">Advance Range Slider</a></li>-->
+                            <li><a href="@Url.Action("UcNestable", "Home")">Nestable</a></li>
+
+                            <!--<li><a href="@Url.Action("UcRangeBarRating", "Home")">Bar Rating</a></li>-->
+                            <!-- <li><a href="@Url.Action("UcRatingjRate", "Home")">jRate</a></li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-layout-grid4-alt"></i> Table <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li><a href="@Url.Action("Index", "Users")">Users</a></li>
+                            <!--  <li><a href="@Url.Action("TableBasic", "Home")">Basic</a></li>
+             <li><a href="@Url.Action("TableExport", "Home")">Datatable Export</a></li>
+             <li><a href="@Url.Action("TableRowSelect", "Home")">Datatable Row Select</a></li>
+            <li><a href="@Url.Action("TableJsGrid", "Home")">Editable </a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-heart"></i> Icons <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li><a href="@Url.Action("FontThemify", "Home")">Themify</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!--      <a class="sidebar-sub-toggle">
+                <i class="ti-map"></i> Maps <span class="sidebar-collapse-icon ti-angle-down"></span>
+            </a>
+            <ul>
+
+                <li><a href="@Url.Action("VectorMap", "Home")">Vector Map</a></li>
+            </ul>
+        </li> -->
+                    <li class="label">Form</li>
+                    <li><a href="@Url.Action("FormBasic", "Home")"><i class="ti-view-list-alt"></i> Basic Form </a></li>
+                    <li class="label">Extra</li>
+                    <li>
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-files"></i> Invoice <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li><a href="@Url.Action("Invoice", "Home")">Basic</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebar-sub-toggle">
+                            <i class="ti-target"></i> Pages <span class="sidebar-collapse-icon ti-angle-down"></span>
+                        </a>
+                        <ul>
+                            <li><a href="@Url.Action("AddPage", "Home")">Add Page</a></li>
+                            <li><a href="@Url.Action("LoginPage", "Login")">Login</a></li>
+                            <li><a href="@Url.Action("AddOrEdit", "User")">Register</a></li>
+                            <li><a href="@Url.Action("ForgotPassword", "Home")">Forgot password</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="../documentation/index.html"><i class="ti-file"></i> Documentation</a></li> -->
+                    <li><a href="@Url.Action("LogOut", "Login")"><i class="ti-close"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div style="padding-bottom:0px" class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <i class="ti-bell"></i>
+                                <div class="drop-down dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-heading">
+                                        <span class="text-left">Recent Notifications</span>
+                                    </div>
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">@Session["Username"].ToString() </div>
+                                                        <div class="notification-text">5 members joined today </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Mariam</div>
+                                                        <div class="notification-text">likes a photo of you</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Tasnim</div>
+                                                        <div class="notification-text">
+                                                            Hi Teddy, Just wanted to let you
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Abdulrahman Hamad</div>
+                                                        <div class="notification-text">
+                                                            Hi Teddy, Just wanted to let you
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="text-center">
+                                                <a href="#" class="more-link">See All</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <i class="ti-email"></i>
+                                <div class="drop-down dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-heading">
+                                        <span class="text-left">2 New Messages</span>
+                                        <a href="email.html">
+                                            <i class="ti-pencil-alt pull-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li class="notification-unread">
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/1.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Michael Qin</div>
+                                                        <div class="notification-text">
+                                                            Hi Teddy, Just wanted to let you
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="notification-unread">
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/2.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Haitham Ahmed</div>
+                                                        <div class="notification-text">
+                                                            Hi Teddy, Just wanted to let you
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Michael Qin</div>
+                                                        <div class="notification-text">
+                                                            Hi Teddy, Just wanted to let you
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                         src="@Url.Content("~/Content/assets/")images/avatar/2.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">
+                                                            02:34
+                                                            PM
+                                                        </small>
+                                                        <div class="notification-heading">Mr. Adel</div>
+                                                        <div class="notification-text">
+                                                            Hi Teddy, Just wanted to let you
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="text-center">
+                                                <a href="#" class="more-link">See All</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown dib">
+                            <!---->
+                            <div class="header-icon">
+                                <a style="padding:0" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                    <span class="user-avatar">
+                                        @Session["Username"].ToString()
+
+                                    </span>
+                                </a>
+                                <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
+
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="@Url.Action("AppProfile", "Home")">
+                                                    <i class="ti-user"></i>
+                                                    <span>Profile</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="@Url.Action("AppEmail", "Home")">
+                                                    <i class="ti-email"></i>
+                                                    <span>Inbox</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-settings"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+
+                                           
+                                            <li>
+
+                                                <a href="@Url.Action("LogOut", "Login")">
+                                                    <i class="ti-power-off"></i>Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrap">
+
+        @RenderBody()
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer">
+                    <p>
+                        2021 © Moose Studios
+                        <!-- <a href="#">example.com</a> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END OF NAVBAR AND COMMON HEADER ITEMS -->
+    <!-- jquery vendor -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/jquery.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/menubar/sidebar.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/preloader/pace.min.js"></script>
+    <!-- sidebar -->
+
+    <script src="@Url.Content("~/Content/assets/")js/lib/bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/scripts.js"></script>
+    <!-- bootstrap -->
+
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/moment.latest.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/pignose.init.js"></script>
+
+
+    <!-- App Event Calender js -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/moment/moment.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar/fullcalendar.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar/fullcalendar-init.js"></script>
+
+    <!-- flot-chart js -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/excanvas.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/jquery.flot.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/jquery.flot.pie.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/jquery.flot.time.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/jquery.flot.stack.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/jquery.flot.resize.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/jquery.flot.crosshair.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/curvedLines.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/flot-chart/flot-chart-init.js"></script>
+
+    <!-- Peity Chart init -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/peitychart/jquery.peity.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/peitychart/peitychart.init.js"></script>
+
+    <!-- sparkline init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/sparklinechart/sparkline.init.js"></script>
+
+    <!-- Chart Js -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/chart-js/Chart.bundle.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/chart-js/chartjs-init.js"></script>
+
+    <script src="@Url.Content("~/Content/assets/")js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/weather/weather-init.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/circle-progress/circle-progress.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/circle-progress/circle-progress-init.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/chartist/chartist.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/morris-chart/raphael-min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/morris-chart/morris.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/morris-chart/morris-init.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/knob/jquery.knob.min.js "></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/knob/knob.init.js "></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/sparklinechart/sparkline.init.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/owl-carousel/owl.carousel-init.js"></script>
+
+    <!-- Datatable (Export) -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/datatables.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/buttons.flash.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/jszip.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/pdfmake.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/vfs_fonts.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/buttons.print.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/data-table/datatables-init.js"></script>
+
+    <!-- JS Grid Scripts Start-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/db.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/jsgrid.core.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/jsgrid.load-indicator.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/jsgrid.load-strategies.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/jsgrid.sort-strategies.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/jsgrid.field.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/fields/jsgrid.field.text.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/fields/jsgrid.field.number.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/fields/jsgrid.field.select.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/fields/jsgrid.field.checkbox.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/fields/jsgrid.field.control.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/jsgrid/jsgrid-init.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+
+
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+    <!-- JS Grid Scripts End-->
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/dashboard2.js"></script>
+
+    <!-- jQuery Validation -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/jQueryValidation.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,200 @@
+﻿@model IEnumerable<MustafaCMS.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+<!-- Sweet Alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+@if (Session["add"] != null)
+{
+
+    <p style="height: 0;"></p>
+    <!-- The above is just a snippet to make the lower code to actually work-->
+<script>
+        Alert();
+        function Alert() {
+
+            swal("Success", "You have successfully added @Session["userAdded"].ToString()!", "success")
+        };
+</script>
+    Session["add"] = null;
+    Session["userAdded"] = null;
+}
+else if (Session["delete"] != null)
+{
+    <p style="height: 0;"></p>
+    <!-- The above is just a snippet to make the lower code to actually work-->
+    <script>
+        Alert();
+        function Alert() {
+            swal("Success", "You have successfully deleted the user!", "success")
+        };
+    </script>
+    Session["delete"] = null;
+}
+
+else if (Session["edit"] != null)
+{
+    <p style="height: 0;"></p>
+    <!-- The above is just a snippet to make the lower code to actually work-->
+<script>
+        Alert();
+        function Alert() {
+            swal("Success", "You have successfully made changes to @Session["userEdited"].ToString()!", "success")
+        };
+</script>
+    Session["edit"] = null;
+    Session["userEdited"] = null;
+}
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<style>
+    td {
+        padding-left: 5px;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 p-r-0 title-margin-right">
+
+        </div>
+        <!-- /# column -->
+        <!-- /# column -->
+    </div>
+    <!-- /# row -->
+    <!-- /# column -->
+    <link href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <div style="margin: 21px" class="card">
+        <div class="card-title">
+            <h3>Users Table </h3>
+
+        </div>
+        <div class="card-body">
+            <div class="bootstrap-data-table-panel">
+                <div class="table-responsive">
+                    @{
+                        string space = "";
+                        string fullName = "Full Name";
+                    }
+                    <p>
+
+                        <a style="font-size: medium" href="@Url.Action("Create")" class="btn btn-success btn-sm">Add User <i style="margin:0; margin-left:7px; color:ghostwhite" class="fa fa-plus fa-lg"></i></a>
+                    </p>
+                    <table id="userTable" width="100%" class="table">
+                        <thead>
+                            <tr>
+                                <th style="padding-left: 20px !important">
+                                    @Html.DisplayNameFor(model => model.UserID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Username)
+                                </th>
+                                <th>
+                                    @fullName
+                                </th>
+
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IsAdmin)
+                                </th>
+                                <th style="padding-right:0 !important">
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </th>
+
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UserID)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Username)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.firstName)  @space   @Html.DisplayFor(modelItem => item.lastName)
+                                    </td>
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IsAdmin)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+
+
+                                    <td>
+
+                                        <a href="@Url.Action("Edit", new { id = item.UserID })" class="btn btn-primary btn-sm"><i style="margin:0; color:ghostwhite" class="fa fa-pencil fa-lg"></i></a>
+                                        <a href="@Url.Action("Delete", new { id = item.UserID })" class="btn btn-danger btn-sm"><i style="margin:0; color:ghostwhite" class="fa fa-trash fa-lg"></i></a>
+                                        <a href="@Url.Action("Details", new { id = item.UserID })" class="btn btn-info btn-sm"><i style="margin:0; color:ghostwhite" class="fa fa-ellipsis-h fa-lg"></i></a>
+
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UserID)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Username)
+                                </th>
+                                <th>
+                                    @fullName
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IsAdmin)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /# card -->
+    <!-- /# column -->
+
+</div>
+<!-- /# row -->
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js">
+
+</script>
+<script>
+    function activatejQueryTable() {
+        $("#userTable").DataTable();
+    }
+
+    $(function () {
+
+        activatejQueryTable();
+    });
+
+    $('#userTable').dataTable({
+       "autoWidth": true
+    });
+</script>

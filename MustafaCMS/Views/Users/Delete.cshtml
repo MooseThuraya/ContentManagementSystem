@@ -1,0 +1,149 @@
+﻿@model MustafaCMS.Models.User
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 p-r-0 title-margin-right">
+
+        </div>
+        <!-- /# column -->
+        <!-- /# column -->
+    </div>
+    <!-- /# row -->
+    <!-- /# column -->
+
+    <div style="margin: 21px;" class="card">
+
+        <div class="card-body">
+            <div class="table-responsive">
+
+                <h3>Are you sure you want to delete this user?</h3>
+                <div>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt >
+                            @Html.DisplayNameFor(model => model.Username)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Username)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Password)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Password)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.IsAdmin)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.IsAdmin)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.firstName)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.firstName)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.lastName)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.lastName)
+                        </dd>
+
+
+
+                    </dl>
+                    
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+
+                <div style="margin-top: 40px;" class="form-actions no-color">
+                    <a  href="@Url.Action("Index", "Users")"><button type="button" class="btn btn-info btn">Back to List</button></a>
+                    <button type="submit" value="Delete" class="btn btn-danger btn sweet-confirm">Delete</button>
+
+
+                </div>
+                    }
+                </div>
+
+
+                <!-- Tabs content -->
+                <!--Start of table-->
+                <!--<table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Salary</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mustafa Abuthuraya</td>
+                            <td><span class="badge badge-success">Approved</span></td>
+                            <td>January 22</td>
+                            <td class="color-primary">$21.56</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Ahmad Hezbawi</td>
+                            <td><span class="badge badge-success">Approved</span></td>
+                            <td>January 30</td>
+                            <td class="color-success">$55.32</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Nebil Sahin</td>
+                            <td><span class="badge badge-danger">Denied</span></td>
+                            <td>January 25</td>
+                            <td class="color-danger">$14.85</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    -->
+            </div>
+        </div>
+    </div>
+    <!-- /# card -->
+    <!-- /# column -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/sweetalert/sweetalert.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/sweetalert/sweetalert.init.js"></script>
+</div>
+<!-- /# row -->

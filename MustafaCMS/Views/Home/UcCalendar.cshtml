@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "UcCalendar";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+<link href="@Url.Content("~/Content/assets/")css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+<link href="@Url.Content("~/Content/assets/")css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 p-r-0 title-margin-right">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Hello, <span>@Session["firstName"].ToString() </span></h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+            <div class="col-lg-4 p-l-0 title-margin-left">
+                <div class="page-header">
+                    <div class="page-title">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active">UC-Calendar</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+        </div>
+        <!-- /# row -->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Calender</h4>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="year-calendar"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+        </section>
+    </div>
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/moment.latest.min.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/semantic.ui.min.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/prism.min.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar-2/pignose.init.js"></script>
+
+    <!-- App Event Calender js -->
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar/fullcalendar.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/calendar/fullcalendar-init.js"></script>
+</div>
+

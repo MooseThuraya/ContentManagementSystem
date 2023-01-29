@@ -1,0 +1,166 @@
+﻿
+@model IEnumerable<MustafaCMS.Models.User>
+
+@{
+    ViewBag.Title = "TableUser";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 p-r-0 title-margin-right">
+
+        </div>
+        <!-- /# column -->
+        <div class="col-lg-4 p-l-0 title-margin-left">
+            <div class="page-header">
+                <div class="page-title">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Table-Basic</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+    </div>
+    <!-- /# row -->
+    <!-- /# column -->
+
+    <div style="margin: 21px" class="card">
+        <div class="card-title">
+            <h3>Users Table </h3>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+
+                <p>
+                    @Html.ActionLink("Create New", "Create")
+                </p>
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Username)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Password)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ConfirmPassword)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IsAdmin)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.firstName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.lastName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ImagePath)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LoginErrorMessage)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Username)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Password)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ConfirmPassword)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IsAdmin)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.firstName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.lastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ImagePath)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LoginErrorMessage)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.UserID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.UserID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.UserID })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+
+                <!-- Tabs content -->
+                <!--Start of table-->
+                <!--<table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Salary</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mustafa Abuthuraya</td>
+                            <td><span class="badge badge-success">Approved</span></td>
+                            <td>January 22</td>
+                            <td class="color-primary">$21.56</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Ahmad Hezbawi</td>
+                            <td><span class="badge badge-success">Approved</span></td>
+                            <td>January 30</td>
+                            <td class="color-success">$55.32</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Nebil Sahin</td>
+                            <td><span class="badge badge-danger">Denied</span></td>
+                            <td>January 25</td>
+                            <td class="color-danger">$14.85</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    -->
+            </div>
+        </div>
+    </div>
+    <!-- /# card -->
+    <!-- /# column -->
+
+</div>
+<!-- /# row -->
+    </section>
+</div>
+    </div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>

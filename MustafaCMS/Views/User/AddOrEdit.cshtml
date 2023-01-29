@@ -1,0 +1,138 @@
+﻿@model MustafaCMS.Models.User
+
+@{
+    ViewBag.Title = "User Registration";
+    Layout = "~/Views/Shared/_Empty.cshtml"; //a layout must be rendered otherwise, crash, why?
+
+}
+@{
+    if (Session["userId"] != null)
+    {
+        Session["userId"] = null;
+        Session["Username"] = null;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MooseUI: Registration Page</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="@Url.Content("~/Content/assets/")images/favicon.ico" type="image/x-icon" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet"
+          href="@Url.Content("~/Content/assets/")fonts/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+    <!-- animation css -->
+    <link rel="stylesheet"
+          href="@Url.Content("~/Content/assets/")plugins/animation/css/animate.min.css" />
+    <!-- vendor css -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/")css/formStyle.css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/")css/styleOther.css" />
+
+    <!-- This is the error color -->
+    <style>
+
+        .field-validation-error {
+            color: #ff005c;
+        }
+
+        .input-group.mb-3 {
+            margin-bottom: 10px !important;
+        }
+
+        .input-group.mb-4 {
+            margin-bottom: 10px !important;
+        }
+
+        p {
+            margin-top: 7px !important;
+            margin-bottom: 10px !important;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fa fa-user-plus auth-icon"></i>
+                    </div>
+                    <h3 class="mb-4">Sign up</h3>
+                    @using (Html.BeginForm("AddOrEdit", "User", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", placeholder = "Username" } })
+                        </div>
+                        <p class="field-validation-error">@Html.ValidationMessageFor(model => model.Username, "", new { @class = "field-validation-error" })</p>
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control", placeholder = "First Name" } })
+                        </div>
+                        <p class="field-validation-error">@Html.ValidationMessageFor(model => model.firstName, "", new { @class = "field-validation-error" })</p>
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control", placeholder = "Last Name" } })
+                        </div>
+                        <p class="field-validation-error">@Html.ValidationMessageFor(model => model.lastName, "", new { @class = "field-validation-error" })</p>
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
+                        </div>
+                        <p class="field-validation-error">@Html.ValidationMessageFor(model => model.Email, "", new { @class = "field-validation-error" })</p>
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password" } })
+                        </div>
+                        <p class="field-validation-error">@Html.ValidationMessageFor(model => model.Password, "", new { @class = "field-validation-error" })</p>
+                        <div class="input-group mb-3">
+                            @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "Confirm Password" } })
+                        </div>
+                        <p class="field-validation-error">@Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "field-validation-error" })</p>
+                        <p style="margin-top: 10px" class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</p>
+                        <div style="margin-top:30px ;" class="form-group text-left">
+                            <div class="checkbox checkbox-fill d-inline">
+                                <input type="checkbox"
+                                       name="checkbox-fill-1"
+                                       id="checkbox-fill-1"
+                                       checked="" />
+                                <label style="display: inline"
+                                       for="checkbox-fill-1"
+                                       class="cr">
+                                    Save Details
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" value="Create"
+                                class="btn btn-primary shadow-2 mb-4 submit">
+                            Sign up
+                        </button>
+                        <p class="mb-0 text-muted"> Already have an account? <a href="@Url.Action("LoginPage", "Login")"> Log in</p>
+                        }
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</body>
+</html>

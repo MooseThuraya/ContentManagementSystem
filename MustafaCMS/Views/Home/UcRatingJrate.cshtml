@@ -1,0 +1,253 @@
+﻿
+@{
+    ViewBag.Title = "UcRatingJrate";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 p-r-0 title-margin-right">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Hello, <span>@Session["firstName"].ToString()</span></h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+            <div class="col-lg-4 p-l-0 title-margin-left">
+                <div class="page-header">
+                    <div class="page-title">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active">UC-Rating-jRate</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+        </div>
+        <!-- /# row -->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>No checked stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="no-checked-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Half & Full Stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="half-full-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Full Stars Only</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="full-stars-only"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Blue Stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="blue-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Horizontal stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="hrizontal-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Reverse stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="reverse-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Read-only stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="read-only-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Precision stars</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="precision-stars"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Custom Icon-1</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="custom-icon-1"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Custom Icon-2</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="custom-icon-2"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Custom Icon-3</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="custom-icon-3"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-title">
+                            <h4>Custom Icon-4</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rating1">
+                            <div id="custom-icon-4"></div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+            </div>
+            <!-- /# row -->
+        </section>
+    </div>
+    <script src="@Url.Content("~/Content/assets/")js/lib/rating1/jRate.min.js"></script>
+    <script src="@Url.Content("~/Content/assets/")js/lib/rating1/jRate.init.js"></script>
+</div>
+

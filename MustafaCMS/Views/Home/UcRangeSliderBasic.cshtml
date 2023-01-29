@@ -1,0 +1,551 @@
+﻿
+@{
+    ViewBag.Title = "UcRangeSliderBasic";
+    Layout = "~/Views/Shared/_mooseUI.cshtml";
+}
+
+<link href="@Url.Content("~/Content/assets/")css/lib/rangSlider/ion.rangeSlider.css" rel="stylesheet">
+<!--Themes Jquery Bar Rating-->
+<link href="@Url.Content("~/Content/assets/")css/lib/rangSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 p-r-0 title-margin-right">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>Hello, <span>@Session["firstName"].ToString()</span></h1>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+            <div class="col-lg-4 p-l-0 title-margin-left">
+                <div class="page-header">
+                    <div class="page-title">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active">UC-Range-Slider-Basic</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- /# column -->
+        </div>
+        <!-- /# row -->
+        <section id="main-content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Start without params</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_01" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Set min value, max value and start point</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_02" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Set type grid and adding prefix "$"</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_03" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Set up range with negative values</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_04" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Using step 250</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_05" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Set up range with fractional values, using fractional step</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_06" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Set up you own numbers</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_07" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Using any strings as your values</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_08" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>One more example with strings</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_09" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>No prettify. Big numbers are ugly and unreadable</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_10" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Prettify enabled. Much better!</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_11" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Don't like space as separator? Use anything you like!</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_12" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>You don't like default prettify function? Use your own!</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_13" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Using prefixes</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_14" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Using postfixes</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_15" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Whant to show that max number is not the biggest one?</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_16" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Taking care about how from and to values connect? Use decorate_both option:</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_17" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Remove double decoration</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_18" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Use your own separator symbol with values_separator option. Like →</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_19" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Or " to ":</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_20" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>You can disable all the sliders visual details, if you wish. Like this:</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_21" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>Or hide any part you wish</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_22" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>And some more</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_23" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+
+                <div class="col-lg-6">
+                    <div class="card nestable-cart">
+                        <div class="card-title">
+                            <h4>And some more</h4>
+                            <div class="card-title-right-icon">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rangeslider">
+                            <div>
+                                <input type="text" id="range_24" value="" name="range" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# card -->
+                </div>
+                <!-- /# column -->
+
+            </div>
+            <!-- /# row -->
+
+        </section>
+    </div>
+    <!--ION Range Slider JS-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/rangeSlider/ion.rangeSlider.min.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/rangeSlider/moment.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/rangeSlider/moment-with-locales.js"></script>
+    <!-- scripit init-->
+    <script src="@Url.Content("~/Content/assets/")js/lib/rangeSlider/rangeslider.init.js"></script>
+</div>
